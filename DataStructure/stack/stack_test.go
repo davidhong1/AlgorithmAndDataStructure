@@ -7,7 +7,7 @@ import (
 
 func TestStack(t *testing.T) {
 	as := InitArrayStack(10)
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 100; i++ {
 		ret := as.Push(fmt.Sprintf("%s, %d", "Hello", i))
 		if ret {
 			t.Log("ArrayStack Push Success")
@@ -16,7 +16,7 @@ func TestStack(t *testing.T) {
 		}
 	}
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 100; i++ {
 		t.Log(as.Pop())
 	}
 }

@@ -5,10 +5,11 @@ import (
 	"testing"
 )
 
-func TestQueue(t *testing.T) {
+func TestArrayQueue(t *testing.T) {
 
 	n := 10
-	aq := InitArrayQueue(n)
+	// aq := InitArrayQueue(n)
+	aq := InitCircularQueue(n)
 
 	for i := 0; i < n-5; i++ {
 		if !aq.Enqueue(fmt.Sprintf("%s, %d", "hello", i)) {

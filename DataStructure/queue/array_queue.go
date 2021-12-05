@@ -1,10 +1,10 @@
 package queue
 
 type ArrayQueue struct {
-	items []string `json:"items"`
-	n     int      `json:"n"`
-	head  int      `json:"head"` // 队头下标
-	tail  int      `json:"tail"` // 队尾下标
+	items []string
+	n     int
+	head  int // 队头下标
+	tail  int // 队尾下标
 }
 
 func InitArrayQueue(n int) *ArrayQueue {

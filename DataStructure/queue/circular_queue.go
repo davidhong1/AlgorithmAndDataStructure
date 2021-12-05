@@ -1,10 +1,10 @@
 package queue
 
 type CircularQueue struct {
-	items []string `json:"items"`
-	head  int      `json:"head"`
-	tail  int      `json:"tail"`
-	n     int      `json:"n"`
+	items []string
+	head  int
+	tail  int
+	n     int
 }
 
 func InitCircularQueue(n int) *CircularQueue {
